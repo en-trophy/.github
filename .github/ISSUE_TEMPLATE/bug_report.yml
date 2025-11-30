@@ -1,0 +1,56 @@
+name: "Bug Report"
+description: "버그를 제보합니다."
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "📝 문제 요약"
+      placeholder: "어떤 문제가 발생했는지 한 줄로 적어주세요."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "📍 재현 방법"
+      description: "어떤 순서로 했을 때 버그가 발생했는지 적어주세요."
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "✨ 기대 동작"
+      placeholder: "원래 어떻게 동작해야 하나요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "⚠️ 실제 동작"
+      placeholder: "실제로는 어떻게 동작했나요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: env
+    attributes:
+      label: "💻 실행 환경"
+      placeholder: "예) macOS / Chrome 120 / Node 20 ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: etc
+    attributes:
+      label: "📎 추가 내용 (로그, 스크린샷 등)"
+      placeholder: "관련 로그, 캡처 이미지 설명 등을 적어주세요."
+    validations:
+      required: false
