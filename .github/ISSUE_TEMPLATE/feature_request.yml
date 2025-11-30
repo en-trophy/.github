@@ -1,0 +1,36 @@
+name: "Feature Request"
+description: "새로운 기능을 제안합니다."
+title: "[FEAT] "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "📝 기능 요약"
+      placeholder: "어떤 기능을 추가하고 싶은지 한 줄로 적어주세요."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "🤔 이 기능이 필요한 이유"
+      placeholder: "현재 어떤 불편함/문제가 있고, 이 기능이 무엇을 해결해주나요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "💡 제안 내용"
+      placeholder: "구체적으로 어떻게 동작하면 좋을지 적어주세요."
+    validations:
+      required: false
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: "🔍 추가 정보"
+      placeholder: "와이어프레임, 참고 링크, 비슷한 서비스 예시 등"
+    validations:
+      required: false
